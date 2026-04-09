@@ -1,11 +1,19 @@
+html{
+  height: 100%;
+}
 body {
   font-family: sans-serif;
   margin: 0;
   background-color: #141215;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   background: #3f253f;
   height: 100px;
+    align-content: center;
+
 }
 .container {
   display: flex;
@@ -13,13 +21,14 @@ body {
   align-items: top;
   gap: 20px;
   height: auto;
+  flex: 1 0;
 }   
 .cult{
   color: aliceblue;
 }
 .left{
   width: 25%;
-  height: auto;
+  height: 600px;;
   padding: 0;
   align-items: center;
 }
@@ -28,17 +37,22 @@ body {
   height: auto;
   padding-top: 0;
   margin: 0;
+  align-content: top;
 }
 .gnom{
   height: 100px;
   background: #050505;
   padding-top: 0;
-
+  min-width:390px ;
+  max-width: 100%;
+    align-content: center;
 
 }
 .bom{
-    display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
   padding: 0;
   margin: 0;
 }
@@ -46,12 +60,16 @@ body {
 .def{
   
   height: 150px;
-    background: #050505;
+  width: 390px;
+  align-content: center;
+  background: #050505;
 
 }
 .niz{
     background: #d9e599;
   height: 100px;
+    align-content: center;
+
 }
 .ziz{
   color: #050505;
@@ -69,7 +87,7 @@ div {
   padding: 10px;
   margin: 10px;
   border-radius: 16px;
-  align-content: center; 
+  
 }
 img{
   border-radius: 16px;
